@@ -42,15 +42,7 @@ namespace Time_Logging
 
         }
 
-        public void GetLoggedTime(string newPath)
-        {
-
-            while (sortedLog.Count > 0)
-            {
-                File.AppendAllLines(newPath, new string[] { sortedLog.Pop().ToString() });
-            }
-            Console.WriteLine("Logging done! Check created file for reversed log.");
-        }
+        
 
         public string FileMaker()
         {
